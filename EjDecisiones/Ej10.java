@@ -37,10 +37,6 @@ public class Ej10 {
         System.out.println("Precio original: " + precio);
         System.out.println("Precio total: " +  precioTotal);
 
-
-
-
-
         sc.close();
     }
 }
