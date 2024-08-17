@@ -14,7 +14,7 @@ public class Ej1 {
 
         int total = km * 45;
 
-        System.out.println(STR."El precio de su viaje es de: $\{total}");
+        System.out.println("El precio de su viaje es de: $" + total);
         sc.close();
     
     }
