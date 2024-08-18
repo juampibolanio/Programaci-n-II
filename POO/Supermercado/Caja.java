@@ -27,7 +27,4 @@ class Caja {
     public void setNroCaja(int nroCaja) {
       this.nroCaja = nroCaja;
     }
-    
-    
-    
   }

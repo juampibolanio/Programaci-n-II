@@ -20,8 +20,4 @@ class Empleado extends Humane {
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
-
-    
-
-    
 }

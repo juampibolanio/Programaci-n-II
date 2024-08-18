@@ -19,4 +19,3 @@ class Transaccion{
         System.out.println("Producto: "+ nombreProducto +" - Precio Unitario: $"+producto.getPrecio() + " - Cantidad: "+ producto.getCantidad());
     }
 }
-

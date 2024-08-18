@@ -21,5 +21,4 @@ class Cliente extends Humane {
         this.mayorista = mayorista;
     }
 
-    
 }

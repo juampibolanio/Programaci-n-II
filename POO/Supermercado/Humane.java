@@ -38,6 +38,4 @@ class Humane {
     public void setDni(int dni) {
       this.dni = dni;
     }
-  
-    
   }

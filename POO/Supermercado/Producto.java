@@ -28,7 +28,5 @@ public class Producto {
 
     public int getCantidad() {
         return cantidad;
-    }
-
-    
+    }    
 }
