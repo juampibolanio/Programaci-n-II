@@ -12,4 +12,16 @@ class Empleado extends Humane {
     public String toString() {
     return "\n" + super.toString() + "\nSueldo: " + this.sueldo;
     }
+
+    public double getSueldo() {
+        return sueldo;
+    }
+
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    
+
+    
 }

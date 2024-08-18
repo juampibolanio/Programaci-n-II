@@ -2,11 +2,13 @@ package POO.Supermercado;
 
 public class Producto {
     private String nombre;
-    private int precio;
+    private double precio;
     private int cantidad;
     
 
-    public Producto(String nombre, int precio, int cantidad) {
+    
+
+    public Producto(String nombre, double precio, int cantidad) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
@@ -16,7 +18,17 @@ public class Producto {
         return "Producto [nombre=" + nombre + ", precio=" + precio + ", cantidad=" + cantidad + "]";
     }
 
-    public void disminuirStock(int cantidad) {
-        this.cantidad -= 1;
+    public String getNombre() {
+        return nombre;
     }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    
 }

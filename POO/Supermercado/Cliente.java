@@ -12,4 +12,14 @@ class Cliente extends Humane {
     public String toString() {
     return "\n" + super.toString() + "\nMayorista: " + this.mayorista;
     }
+
+    public boolean isMayorista() {
+        return mayorista;
+    }
+
+    public void setMayorista(boolean mayorista) {
+        this.mayorista = mayorista;
+    }
+
+    
 }
