@@ -23,7 +23,7 @@ public class RegistroCivil {
         System.out.print("Ingrese el peso en kilogramos: ");
         double peso = sc.nextDouble();
 
-        Persona persona1 = new Persona(nombre, edad, sexo, peso, altura);
+        Personas persona1 = new Personas(nombre, edad, sexo, peso, altura);
 
         persona1.generaDNI(); // generar DNI
         persona1.comprobarSexo(sexo);

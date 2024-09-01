@@ -1,9 +1,9 @@
 package POO.Supermercado;
 class Caja {
-    private Empleado empleado;
+    private Empleados empleado;
     private int nroCaja;
   
-    public Caja(Empleado empleado, int nroCaja) {
+    public Caja(Empleados empleado, int nroCaja) {
       this.empleado = empleado;
       this.nroCaja = nroCaja;
     }
@@ -12,11 +12,11 @@ class Caja {
       return this.empleado.toString() + "\nNro de caja: " + this.nroCaja;
     }
 
-    public Empleado getEmpleado() {
+    public Empleados getEmpleado() {
       return empleado;
     }
 
-    public void setEmpleado(Empleado empleado) {
+    public void setEmpleado(Empleados empleado) {
       this.empleado = empleado;
     }
 

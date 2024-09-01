@@ -1,10 +1,10 @@
 package POO.Supermercado;
 
-class Empleado extends Humane {
+class Empleados extends Humane {
 
     private double sueldo;
 
-    public Empleado(String nombre, String apellido, int dni, double sueldo) {
+    public Empleados(String nombre, String apellido, int dni, double sueldo) {
     super(nombre, apellido, dni);
     this.sueldo = sueldo;
     }

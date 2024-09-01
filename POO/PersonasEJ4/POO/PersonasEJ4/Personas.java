@@ -2,7 +2,7 @@ package POO.PersonasEJ4;
 
 import java.util.Random;
 
-public class Persona {
+public class Personas {
     private String nombre;
     private int edad;
     private int dni;
@@ -10,19 +10,19 @@ public class Persona {
     private double peso;
     private double altura;
 
-    public Persona() {
+    public Personas() {
         this.dni = generaDNI(); 
         this.sexo = 'H'; 
     }
 
-    public Persona(String nombre, int edad, String sexo) {
+    public Personas(String nombre, int edad, String sexo) {
         this.nombre = nombre;
         this.edad = edad;
         this.dni = generaDNI(); 
         comprobarSexo(sexo);
     }
 
-    public Persona(String nombre, int edad, String sexo, double peso, double altura) {
+    public Personas(String nombre, int edad, String sexo, double peso, double altura) {
         this.nombre = nombre;
         this.edad = edad;
         this.dni = generaDNI(); 
