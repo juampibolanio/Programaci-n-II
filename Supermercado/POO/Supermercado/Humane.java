@@ -1,4 +1,4 @@
-package POO.Supermercado;
+
 class Humane {
 
     private String nombre;

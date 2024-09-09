@@ -1,6 +1,6 @@
-package POO.EscrituraEJ3;
+
 import java.util.Scanner;
-public class Main {
+public class Maina {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

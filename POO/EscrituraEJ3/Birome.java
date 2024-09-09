@@ -1,4 +1,4 @@
-package POO.EscrituraEJ3;
+
 
 public class Birome {
     private int cantidadTinta;

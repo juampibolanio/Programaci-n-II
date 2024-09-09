@@ -1,4 +1,4 @@
-package POO.EscrituraEJ3;
+
 /*
  * Escribir una clase Papel que contenga un atributo texto, un método escribir, que reciba una
 cadena de caracteres para agregar al texto, y el método toString() que imprima el contenido del

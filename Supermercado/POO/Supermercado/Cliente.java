@@ -1,5 +1,3 @@
-package POO.Supermercado;
-
 class Cliente extends Humane {
 
     private boolean mayorista;

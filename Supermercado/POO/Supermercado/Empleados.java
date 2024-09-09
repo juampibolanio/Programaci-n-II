@@ -1,4 +1,4 @@
-package POO.Supermercado;
+
 
 class Empleados extends Humane {
 

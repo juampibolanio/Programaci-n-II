@@ -1,4 +1,4 @@
-package POO.Supermercado;
+
 class Caja {
     private Empleados empleado;
     private int nroCaja;

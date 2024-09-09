@@ -1,4 +1,4 @@
-package POO.BancoEJ1;
+
 
 /*
  * Crea una clase llamada Cuenta que tendrá los siguientes atributos:

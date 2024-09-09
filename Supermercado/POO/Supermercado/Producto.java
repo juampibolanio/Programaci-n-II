@@ -1,4 +1,4 @@
-package POO.Supermercado;
+
 
 public class Producto {
     private String nombre;
