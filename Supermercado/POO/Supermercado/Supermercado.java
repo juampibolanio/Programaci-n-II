@@ -42,7 +42,7 @@ public class Supermercado {
             }
         }
 
-        Cliente cliente1 = new Cliente(nombreCliente, apellidoCliente, dniCliente, esMayorista);
+        Clientes cliente1 = new Clientes(nombreCliente, apellidoCliente, dniCliente, esMayorista);
         boolean compraEnProceso = true;
 
         ArrayList<Transaccion> ticketCompra = new ArrayList<>();

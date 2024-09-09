@@ -1,13 +1,13 @@
-public class Clientes {
+public class Cliente {
     private int id;
     private String nombre;
     private String correo;
     private String telefono;
 
-    public Clientes() {
+    public Cliente() {
     }
 
-    public Clientes(int id, String nombre, String correo, String telefono) {
+    public Cliente(int id, String nombre, String correo, String telefono) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
@@ -16,7 +16,7 @@ public class Clientes {
 
     @Override
     public String toString() {
-        return "Cliente: ID = " + id + "- Nombre =" + nombre + "- Correo =" + correo + "- Teléfono=" + telefono;
+        return "Cliente >> ID: " + id + " - Nombre: " + nombre + " - Correo: " + correo + " - Teléfono: " + telefono;
     }
 
     public int getId() {

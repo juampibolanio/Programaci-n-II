@@ -1,8 +1,8 @@
-class Cliente extends Humane {
+class Clientes extends Humane {
 
     private boolean mayorista;
 
-    public Cliente(String nombre, String apellido, int dni, boolean mayorista) {
+    public Clientes(String nombre, String apellido, int dni, boolean mayorista) {
     super(nombre, apellido, dni);
     this.mayorista = mayorista;
     }

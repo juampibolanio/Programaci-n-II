@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 
 public class Tienda {
-    ArrayList <Clientes> listaClientes = new ArrayList<>();
+    ArrayList <Cliente> listaClientes = new ArrayList<>();
 
     //Método para agregar un cliente
-    public void agregarCliente(Clientes cliente) {
+    public void agregarCliente(Cliente cliente) {
         listaClientes.add(cliente);
     }
 
     //método para buscar un cliente
-    public Clientes buscarCliente(int id) {
-        for (Clientes clientes : listaClientes) {
+    public Cliente buscarCliente(int id) {
+        for (Cliente clientes : listaClientes) {
             if (clientes.getId() == id) {
                 return clientes;
             } 
@@ -20,7 +20,7 @@ public class Tienda {
 
     //actualizar los datos de un cliente
     public void actualizarDatos(int id, String nombre, String correo, String telefono) {
-        Clientes cliente = buscarCliente(id);
+        Cliente cliente = buscarCliente(id);
         if (cliente != null) {
             cliente.setNombre(nombre);
             cliente.setCorreo(correo);
@@ -32,7 +32,7 @@ public class Tienda {
     }
     //eliminar un cliente de la lista
     public void eliminarCliente(int id) {
-        Clientes clienteAEliminar = this.buscarCliente(id);
+        Cliente clienteAEliminar = this.buscarCliente(id);
         if (clienteAEliminar != null) {
             listaClientes.remove(clienteAEliminar);
             System.out.println("Cliente eliminado: " + clienteAEliminar.getNombre());
@@ -43,12 +43,11 @@ public class Tienda {
     
     //listar los clientes
     public void mostrarClientes() {
-        System.out.println("Lista de clientes: ");
         if (listaClientes.isEmpty()) {
             System.out.println("No hay clientes en la lista.");
         } else {
             System.out.println("Lista de clientes:");
-            for (Clientes cliente : listaClientes) {
+            for (Cliente cliente : listaClientes) {
                 System.out.println(cliente);
             }
         }

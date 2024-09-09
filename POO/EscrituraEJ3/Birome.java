@@ -1,5 +1,3 @@
-
-
 public class Birome {
     private int cantidadTinta;
 

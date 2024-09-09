@@ -6,9 +6,9 @@ public class Main {
 
         Tienda miTienda = new Tienda(); //crear una nueva tienda
 
-        Clientes cliente1 = new Clientes(10, "Marcos López", "marcoslopez@gmail.com", "3523345364");
-        Clientes cliente2 = new Clientes(4, "Rocío Pereira", "rociope@gmail.com", "2345435345");
-        Clientes cliente3 = new Clientes(7, "Edgardo García", "edgarcia@hotmail.com", "343565345");
+        Cliente cliente1 = new Cliente(10, "Marcos López", "marcoslopez@gmail.com", "3523345364");
+        Cliente cliente2 = new Cliente(4, "Rocío Pereira", "rociope@gmail.com", "2345435345");
+        Cliente cliente3 = new Cliente(7, "Edgardo García", "edgarcia@hotmail.com", "343565345");
 
         //agregar los clientes
         miTienda.agregarCliente(cliente1);
