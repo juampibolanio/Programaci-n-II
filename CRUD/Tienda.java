@@ -6,6 +6,7 @@ public class Tienda {
     //Método para agregar un cliente
     public void agregarCliente(Cliente cliente) {
         listaClientes.add(cliente);
+        System.out.println("Cliente agregado. ");
     }
 
     //método para buscar un cliente

@@ -6,27 +6,69 @@ public class Main {
 
         Tienda miTienda = new Tienda(); //crear una nueva tienda
 
-        Cliente cliente1 = new Cliente(10, "Marcos López", "marcoslopez@gmail.com", "3523345364");
-        Cliente cliente2 = new Cliente(4, "Rocío Pereira", "rociope@gmail.com", "2345435345");
-        Cliente cliente3 = new Cliente(7, "Edgardo García", "edgarcia@hotmail.com", "343565345");
+        boolean continuar = true;
+        while (continuar) {
+            System.out.println("------] Bienvenido a la tienda [------");
+            System.out.println("[1] Buscar cliente ");
+            System.out.println("[2] Listar clientes ");
+            System.out.println("[3] Agregar cliente ");
+            System.out.println("[4] Eliminar cliente ");
+            System.out.println("[5] Modificar cliente ");
+            System.out.println("[6] Salir");
+            System.out.println("- Elija la opción que desee:  ");
 
-        //agregar los clientes
-        miTienda.agregarCliente(cliente1);
-        miTienda.agregarCliente(cliente2);
-        miTienda.agregarCliente(cliente3);
+            int opcion = sc.nextInt();
 
-        //listar los clientes
-        miTienda.mostrarClientes();
+            switch (opcion) {
+                case 1:
+                    System.out.println("Ingrese la id del cliente: ");
+                    int idCliente = sc.nextInt();
+                    sc.nextLine();
+                    miTienda.buscarCliente(idCliente);
+                    break;
+                case 2:
+                    miTienda.mostrarClientes();
+                    break;
+                case 3:
+                    System.out.println("Ingrese la ID del cliente: ");
+                    int id = sc.nextInt();
+                    sc.nextLine();
+                    System.out.println("Ingrese el nombre completo del cliente: ");
+                    String nombre = sc.nextLine();
+                    System.out.println("Ingrese el correo electrónico del cliente: ");
+                    String correo = sc.nextLine();
+                    System.out.println("Ingrese el número de teléfono del cliente: ");
+                    String tel = sc.nextLine();
 
-        //actualizar la informacion de un cliente
-        miTienda.actualizarDatos(7, "Juan Pérez", "juanperez@outlook.com", "3243345453");
+                    Cliente cliente = new Cliente(id, nombre, correo, tel);
+                    miTienda.agregarCliente(cliente);
+                    break;
 
-        //eliminar un cliente de la lista
-        miTienda.eliminarCliente(10);
+                case 4:
+                    System.out.println("Ingrese la id del cliente que desea eliminar: ");
+                    int idE = sc.nextInt();
+                    miTienda.eliminarCliente(idE);
+                    break;
+                case 5:
+                    System.out.println("Ingrese la ID del cliente que desea modificar: ");
+                    int idN = sc.nextInt();
+                    System.out.println("Ingrese el nuevo nombre completo del cliente: ");
+                    String nombreN = sc.nextLine();
+                    System.out.println("Ingrese el nuevo correo electrónico del cliente: ");
+                    String correoN = sc.nextLine();
+                    System.out.println("Ingrese el nuevo número de teléfono del cliente: ");
+                    String telN = sc.nextLine();
 
-        //verificar si se elimino el cliente
-        miTienda.mostrarClientes();
+                    miTienda.actualizarDatos(idN, nombreN, correoN, telN);
+                    break;
+                case 6:
+                    continuar = false;
+                    System.out.println("Ha salido.");
+                    break;
+                default:
+                    System.out.println("Ha ingresado una opción incorrecta, intente nuevamente. ");
+            }
+        }
 
-        sc.close();        
     }
 }
