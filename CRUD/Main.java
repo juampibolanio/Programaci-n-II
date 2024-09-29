@@ -52,6 +52,7 @@ public class Main {
                 case 5:
                     System.out.println("Ingrese la ID del cliente que desea modificar: ");
                     int idN = sc.nextInt();
+                    sc.nextLine();
                     System.out.println("Ingrese el nuevo nombre completo del cliente: ");
                     String nombreN = sc.nextLine();
                     System.out.println("Ingrese el nuevo correo electrónico del cliente: ");
@@ -69,6 +70,6 @@ public class Main {
                     System.out.println("Ha ingresado una opción incorrecta, intente nuevamente. ");
             }
         }
-
+        sc.close();
     }
 }
